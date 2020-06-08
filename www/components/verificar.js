@@ -15,3 +15,13 @@ $(document).on("click","#verificar", function(){
       navigator.vibrate(1000);
      }
 });
+
+$(document).on("click","#apagar", function(){
+  var a = $("#visor").val().length-1;
+  var texto =$("#visor").val();
+  var texto_menos_um = texto.substring(0,a);
+
+  $("#visor").val(texto_menos_um);
+
+});
+
